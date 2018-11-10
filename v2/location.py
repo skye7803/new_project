@@ -23,16 +23,16 @@ class Location:
         },
     }
 
+    def __init__(self):
+        # assign a random biome on creation of this location
+        self.biome = random.choice(list(Location.biomes))
+
     def description(self):
         adjective = random.choice(Location.biomes[self.biome]['adjectives'])
         return f"it is {adjective} here"
 
     def blockage(self):
         return Location.biomes[self.biome]['blockage']
-
-    def __init__(self):
-        # assign a random biome on creation of this location
-        self.biome = random.choice(list(Location.biomes))
 
     def __repr__(self):
         return self.biome
