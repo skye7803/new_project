@@ -1,12 +1,3 @@
-# from new_project_actions import Actions
-# from new_project_world import World
-from pprint import pprint
-
-# actions = Actions()
-# world = World()
-#
-# print(world.world)
-
 from world import World
 from player import Player
 
