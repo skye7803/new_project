@@ -1,5 +1,5 @@
-from new_project_actions import Actions
-from new_project_world import World
+from new_project.new_project_actions import Actions
+from new_project.new_project_world import World
 import pprint
 
 actions = Actions()
@@ -24,6 +24,10 @@ class Main:
             actions.movene('x')
         elif self.command == 'west':
             actions.movesw('x')
+        elif self.command == 'help':
+            print(self.helplist)
+        else:
+            print('I don\'t understand')
 
 main = Main()
 
